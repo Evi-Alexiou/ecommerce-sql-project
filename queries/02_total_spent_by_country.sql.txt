@@ -1,6 +1,0 @@
-SELECT "CustomerID",
-       ROUND(SUM(("Quantity" * "UnitPrice")::numeric), 2) AS total_spent
-FROM "ecommerce_data"
-GROUP BY "CustomerID"
-ORDER BY total_spent DESC
-LIMIT 10;
