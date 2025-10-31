@@ -1,0 +1,4 @@
+-- Query 1: Total Orders and Total Sales
+SELECT COUNT(*) AS total_orders,
+       SUM(Quantity * UnitPrice) AS total_sales
+FROM ecommerce_data;
